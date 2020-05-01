@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Todo App</title>
+</head>
+<body>
+	<h1>Welcome To Todo Application</h1>
+
+	<form method="post" action=" ">
+		<input type="text" name="name">
+		<input type="submit" name="submit">
+	</form>
+
+	<ul>
+
+	<% for(var i=0; i< todo.length ;i++) {%>
+
+	<li><%= todo[i].name %></li>
+
+	<% } %>
+
+	</ul>
+
+</body>
+</html>
