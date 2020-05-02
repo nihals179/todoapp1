@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html>
+	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
+			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+			  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./assests/list.js"></script>
 <head>
+
 	<title>Todo App</title>
 </head>
 <body>
@@ -15,7 +20,7 @@
 
 	<% for(var i=0; i< todo.length ;i++) {%>
 
-	<li><%= todo[i].name %></li>
+		<li><%= todo[i].name %></li>
 
 	<% } %>
 

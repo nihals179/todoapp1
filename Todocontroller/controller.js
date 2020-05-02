@@ -12,17 +12,17 @@ app.get('/', function (req, res) {
 
    res.render('todo',{todo:data});
 
-
 }); 
 
 app.post('/',urlencodedParser, function (req, res) {
-	console.log(req.body);	
-	req.end();
+	data.push(req.body);
+	res.json(data);
 });
 
-app.delete('/', function (req, res) {
-
+app.delete('/:name', function (req, res) {
+	data= data.filter(function(todo){
+		return todo.name.replace(/ /g, '-')!==req.params.name;
+	});
 });
-
 
 };
