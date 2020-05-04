@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-	<script src="https://code.jquery.com/jquery-3.5.0.min.js"
-			  integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
-			  crossorigin="anonymous"></script>
-	<script type="text/javascript" src="./assests/list.js"></script>
+	  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <head>
 
 	<title>Todo App</title>
@@ -12,19 +9,19 @@
 	<h1>Welcome To Todo Application</h1>
 
 	<form method="post" action=" ">
-		<input type="text" name="name">
-		<input type="submit" name="submit">
+		<input type="text" name="name" required>
+		<input type="submit">
 	</form>
 
 	<ul>
-
 	<% for(var i=0; i< todo.length ;i++) {%>
 
 		<li><%= todo[i].name %></li>
 
 	<% } %>
-
 	</ul>
 
 </body>
+	<script type="text/javascript" src="./assets/list.js"></script>
+
 </html>
